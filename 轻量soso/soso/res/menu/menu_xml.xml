@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item_geturl" android:title="获取链接"></item>
+    <item android:id="@+id/item_reload" android:title="刷新"></item>
+    <item android:id="@+id/item_bookmarks" android:title="收藏"></item>
+    <item android:id="@+id/item_exit" android:title="退出并清空"></item>
+    <item android:id="@+id/item_imageon" android:title="开启图片"></item>
+    <item android:id="@+id/item_imageoff" android:title="关闭图片"></item>
+    <item android:id="@+id/item_json" android:title="开启脚本"></item>
+    <item android:id="@+id/item_jsoff" android:title="停用脚本"></item>
+    <item android:id="@+id/item_sfon" android:title="开启缩放"></item>
+    <item android:id="@+id/item_sfoff" android:title="关闭缩放"></item>
+    <item android:id="@+id/item_html0n" android:title="开启html5网页支持 "></item>
+    <item android:id="@+id/item_html0ff" android:title="停用html5网页支持"></item>
+    <item android:id="@+id/item_get" android:title="开启文件下载"></item>
+
+</menu>

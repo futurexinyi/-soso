@@ -1,0 +1,48 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Lightweight.soso"
+    android:versionCode="6"
+    android:versionName="1.5" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.Lightweight.soso.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.NoActionBar.TranslucentDecor"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:windowTranslucentNavigation="true"
+            android:windowTranslucentStatus="true" 
+            
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+               <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:scheme="http" />
+            </intent-filter> 
+        </activity>
+        <activity
+            android:name="com.Lightweight.soso.Bookmark"
+            android:launchMode="singleTop" >
+        </activity>
+    </application>
+    <application>
+    </application>
+
+</manifest>

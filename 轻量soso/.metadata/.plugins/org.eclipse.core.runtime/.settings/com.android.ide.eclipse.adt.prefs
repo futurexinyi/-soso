@@ -1,0 +1,6 @@
+com.android.ide.eclipse.adt.autoPickTarget=false
+com.android.ide.eclipse.adt.fixLegacyEditors=1
+com.android.ide.eclipse.adt.palette=ICON_TEXT
+com.android.ide.eclipse.adt.sdk=E\:\\android_sdk
+com.android.ide.eclipse.adt.xmlEditor=true
+eclipse.preferences.version=1

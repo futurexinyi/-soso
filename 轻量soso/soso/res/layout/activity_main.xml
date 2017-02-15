@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/video_fullView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/Button_http"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/biankuang"
+        android:text="长按"
+        android:textSize="13sp" />
+
+    <requestFocus />
+
+    <Button
+        android:id="@+id/Button_http"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/editText_title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/editText_title"
+        android:background="@drawable/biankuang"
+        android:text="搜索"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="搜索或网址"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textSize="10sp" />
+
+    <ProgressBar
+        android:id="@+id/myProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Button" />
+
+    <WebView
+        android:id="@+id/wView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myProgressBar"
+        android:layerType="hardware" />
+
+    <Button
+        android:id="@+id/bookmarks"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/myProgressBar"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/Button"
+        android:background="@drawable/biankuang"
+        android:text="书签"
+        android:textSize="13sp" />
+
+</RelativeLayout>
